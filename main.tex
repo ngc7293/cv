@@ -1,0 +1,149 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{David}{Bourgault}
+%\title{}                               % optional, remove / comment the line if not wanted
+\address{120 avenue Duluth E}{Montréal, QC}{H2W 1H1}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(418)~208~9749}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{david.bourgault.1@ens.etsmtl.ca}                               % optional, remove / comment the line if not wanted
+%\homepage{www.davidbourgault.ca}                         % optional, remove / comment the line if not wanted
+\extrainfo{\url{https://github.com/ngc7293}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Will code for food}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Stages}
+\cventry{Montréal}{Solutions inLibro inc.}{Développeur Web full-stack}{2017-2018}{}
+{%
+\begin{itemize}
+ \item Programmation du logiciel open-source Koha;%
+ \item Suivi des tâches et des demandes des clients;%
+ \item Programmation des scripts d'automatisation en Bash;%
+ \item Programmation de scripts d'importation en Python;%
+ \item Configuration de serveurs Debian.%
+\end{itemize}}
+
+
+\section{Formation}
+\cventry{Montréal}{École de Technologie Supérieure}{Baccalauréat en génie logiciel}{2017--}{\textit{}}{}
+\cventry{Montréal}{École de Technologie Supérieure}{Cheminement universitaire en technologie}{2016--2017}{\textit{}}{}
+\cventry{Québec}{Cégep Limoilou}{DEC Sciences informatiques et mathématiques}{2013--2016}{\textit{}}{}
+
+
+\section{Projets d'étude}
+\cventry{}{École de Technologie Supérieure}{Conception d'un robot biathlète autonome}{2017}{}
+{%
+\begin{itemize}%
+ \item Programmer le microcontrôleur ATmega32 avec Atmel Studio;%
+ \item Modéliser les pièces avec SOLIDWORKS;%
+ \item Usiner les pièces par découpe laser et impression 3D;%
+ \item Répartir les tâches dans l'équipe et s'assurer de leur complétion.%
+\end{itemize}}
+%\ \\
+%\cventry{}{Cégep Limoilou}{Création d'un jeu vidéo}{2015}{}
+%{%
+%\begin{itemize}%
+% \item Programmer la logique du jeu en Java;%
+% \item Opérer selon la méthodologie SCRUM;%
+% \item Utiliser le système de versionnement Git;%
+%%\item Répartier les tâches dans l'équipe et s'assurer de leur complétion.%
+%\end{itemize}}
+
+
+\section{Connaissances informatiques}
+% \cvitem{Programmation}          {C, C++, Java, Python, Perl, SQL, JavaScript, HTML, CSS, BASH}
+% \cvitem{Frameworks}             {Qt, Django, Swing, JavaFX}
+% \cvitem{Environments}           {Visual Studio, Eclipse, Vim}
+% \cvitem{Utilitaires}            {Git, Make, GCC, SSH, FileZilla, VirtualBox}
+% \cvitem{Systèmes d'exploitation}{Linux (Debian), Windows 7/8/10, Android}
+% \cvitem{Microcontrôleurs}       {STM32, ATMega, Arduino, Raspberry Pi}
+% \cvitem{Modélisation}           {SOLIDWORKS, AutoCAD}
+% \cvitem{Autres}                 {Microsoft Office, Adobe Photoshop CC, Adobe InDesign CC, Adobe Premiere Pro CC}
+\cvitem{Languages} {C, C++, Java, Python, Perl, JavaScript, HTML, CSS, SQL, Bash}
+\cvitem{Frameworks} {Qt, Django, TemplateToolkit, JavaFX, Swing}
+\cvitem{Outils} {GCC, Git, Make, SSH, Vim}
+\cvitem{Microcontrôleurs} {STM32, ATMega, Arduino, SPI, I\textsuperscript{2}C, Saleae Logic Analyzer}
+\cvitem{Environments} {Linux, Windows, Android, MySQL, Apache}
+\cvitem{IDE} {Visual Studio, Eclipse, IntelliJ, Android Studio, VSCode}
+\cvitem{Autres} {SOLIDWORKS, Photoshop, InDesign, Premiere Pro}
+
+
+\section{Langues}
+\cvitemwithcomment{Français}{Langue maternelle}             {}
+\cvitemwithcomment{Anglais} {Bilingue à l'oral et à l'écrit}{}
+
+
+\section{Implication}
+\cventry{Montréal}{École de Technologie Supérieure}{Clubs RockÉTS}{2017--}{}
+{%
+\begin{itemize}%
+% \item Intégrer la station inertielle XSens MTi-3;%
+ \item Programmation de l'avionique embarquée;%
+ \item Création d'un logiciel de télémétrie;%
+ \item Assemblage de l'avionique avant le lancement lors de la compétition.%
+\end{itemize}}
+\ \\
+\cventry{Québec}{Collège François-de-Laval}{Équipe Technique}{2011--2013}{}
+{%
+\begin{itemize}%
+ \item Préparer les éclairages et connexions audios et vidéos;%
+ \item Opérer la console de son et d'éclairage pendant les représentations.%
+\end{itemize}}
+
+
+\section{Certifications}
+\cventry{Montréal}{Innovation, Sciences et Développement économique Canada}{Opérateur de radio amateur}{2017}{}
+{%
+Certification de base avec honneurs
+}
+
+\section{Intérêts}
+\cvlistitem{Jeux vidéos (Développement de jeux en C++, participation à un playtest.)}
+\cvlistitem{Sciences et technologies spatiales}
+\cvlistitem{Photographie}
+
+\makecvfooter
+
+\end{document}
+%% end of file `template.tex'.

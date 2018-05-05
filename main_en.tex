@@ -1,0 +1,158 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{David}{Bourgault}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{425 de la Montagne, app. 3137A}{Montreal, QC}{H3C 0J9}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(418)~208~9749}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{david.bourgault.1@etsmtl.ca}                               % optional, remove / comment the line if not wanted
+%\homepage{www.davidbourgault.ca}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Education}
+\cventry{Montréal}{École de Technologie Supérieure}{Bachelor's in Software Engineering}{2017--2021}{\textit{}}{}
+\cventry{Montréal}{École de Technologie Supérieure}{Cheminement universitaire en technologie}{2016--2017}{\textit{}}{}
+\cventry{Québec City}{Cégep Limoilou}{DCS in Computer Science \& Mathematics}{2013--2016}{\textit{}}{}
+
+
+\section{Integrative Projects}
+\cventry{}{École de Technologie Supérieure}{Autonomous Biathlete Robot}{2017}{}
+{%
+\begin{itemize}%
+ \item Programming the ATMega32 microcontroller with Atmel Studio%
+ \item Modelization of parts in SOLIDWORKS%
+ \item Fabrication of pieces by 3D printing and laser cutting%
+ \item Dispatching task to teammates and maintaining schedule%
+\end{itemize}}
+\ \\
+\cventry{}{Cégep Limoilou}{Video Game}{2015}{}
+{%
+\begin{itemize}%
+ \item Programming game logic in Java%
+ \item Working with the Scrum method%
+ \item Using the Git version control software%
+%\item Répartier les tâches dans l'équipe et s'assurer de leur complétion.%
+\end{itemize}}
+
+
+\section{Computer Skills}
+\cvitem{Programming}      {C, C++, Java, Python, SQL, HTML, CSS}
+\cvitem{IDEs}             {Visual Studio, Eclipse, Visual Studio Code, Sublime Text}
+\cvitem{Dev Tools}        {Git, Make, GCC, SSH, FileZilla, VirtualBox}
+\cvitem{Operating Systems}{Linux, Windows 7/8/10, Android}
+\cvitem{Microcontrollers} {ATMega, STM32, SPI, I2C}
+\cvitem{CAD Software}     {SOLIDWORKS, AutoCAD}
+\cvitem{Other}            {Microsoft Office, Adobe Photoshop CC, Adobe InDesign CC Adobe Premiere Pro CC}
+
+
+\section{Languages}
+\cvitemwithcomment{French} {Fluent in written and spoken French} {}
+\cvitemwithcomment{English}{Fluent in written and spoken English}{}
+
+
+\section{Implication}
+\cventry{Montréal}{École de Technologie Supérieure}{Clubs RockÉTS}{2017--}{}
+{%
+\begin{itemize}%
+ \item Integrating the XSens MTi-3 inertial station%
+ \item Assembling avionics prior to launch during competition%
+\end{itemize}}
+\ \\
+\cventry{Québec City}{Collège François-de-Laval}{Equipe Technique}{2011--2013}{}
+{%
+\begin{itemize}%
+ \item Setting up lighting and audio equipment%
+ \item Operating video, audio and sound consoles during shows%
+\end{itemize}}
+
+
+\section{Certificates}
+\cventry{Montréal}{Innovation, Science and Economic Development Canada}{Amateur Radio Operator}{2017}{}
+{%
+Basic with Honours Certification.
+}
+
+
+\section{Experience}
+\cventry{Québec City}{Café l'Ascenseur}{Cook-Waiter}{summer 2015, summer 2016}{}{%
+Tasks :%
+\begin{itemize}%
+ \item Preparing and serving meals%
+ \item Operating cash register%
+ \item Cleaning kitchen and building%
+\end{itemize}%
+Developped skills :%
+\begin{itemize}%
+ \item Autonomy%
+ \item Customer service%
+ \item Working under pressure%
+\end{itemize}}
+\ \\
+\cventry{Québec City}{Épicerie J.A. Moisan}{Commis}{2014}{}{%
+Tasks :%
+\begin{itemize}%
+ \item Managing stocks on shelves%
+ \item Answering clients' questions%
+ \item Cleaning store%
+\end{itemize}%
+Developped skills :%
+\begin{itemize}%
+ \item Autonomy%
+ \item Customer service%
+\end{itemize}}
+
+
+\section{Interests}
+\cvlistitem{Video Games (Developping games in C++, participating in playtests)}
+\cvlistitem{Space science and technologies}
+\cvlistitem{Photography}
+
+\makecvfooter
+
+\end{document}
+%% end of file `template.tex'.
