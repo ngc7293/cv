@@ -55,7 +55,7 @@
 	headheight=0.75cm, % Header height
 	footskip=1cm, % Space from the bottom margin to the baseline of the footer
 	headsep=0.5cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
+	% showframe, % Uncomment to show how the type block is set on the page
 }
 
 \usepackage{enumitem}
@@ -85,9 +85,9 @@
 
 % Command to output an icon in a black square box with text to the right
 \newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	\vcenteredhbox{\colorbox{black}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}% Icon and box
+	\vcenteredhbox{\makebox(#2, #2){\large\csname fa#1\endcsname}}% Icon and box
 	\hspace{0.2cm}% Whitespace
-	\vcenteredhbox{\textcolor{black}{#3}}% Text
+	\vcenteredhbox{#3}% Text
 }
 
 %----------------------------------------------------------------------------------------
@@ -130,7 +130,7 @@
 		\pgfmathparse{(\barwidth*\thebarcount)+(\barsep*\thebarcount)}
 		\let\barx\pgfmathresult
 
-		\filldraw[fill=black, draw=none] (0,-\barx) rectangle (\barone,-\barx-\barwidth);
+		\filldraw[fill=none, draw=black, thin] (0,-\barx-0.05) rectangle (\barone,-\barx-0.25);
 
 		\node [label=180:\texttt{##1}] at (0,-\barx-0.15) {};
 		\addtocounter{barcount}{1}
@@ -171,10 +171,18 @@
 %	CUSTOM SECTIONS
 %----------------------------------------------------------------------------------------
 
+\newcommand{\name}[2]{
+	{\HUGE\textbf{\MakeUppercase{#1}}} \\
+	{\HUGE\textbf{\MakeUppercase{#2}}}
+}
+
 % Command to output section title headings
 \newcommand{\cvsect}[1]{% The only parameter is the section text
 	\vspace{\baselineskip} % Whitespace before the section title
-	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+	\MakeUppercase{\textbf{#1}}% Section title
+	\vspace{1pt}
+	\hrulefill\\
+	% \vspace{\baselineskip}
 }
 
 %----------------------------------------------------------------------------------------
